@@ -1,124 +1,164 @@
+/*
+Calculadora de matrices
+ Alejandro Ramirez
+ Owen Ramirez
+ Yaziel Andrades
+*/
+
 #include <iostream>
 using namespace std;
+
+void lps1(int numeros[4]) {
+	for (int i = 1; i <= 4; i++) {
+		cout<<"Valor "<<i<<":\n";
+		cin>>numeros[i];
+	}
+}
+void lps2(int valores[9]) {
+	for (int i = 1; i <= 9; i++) {
+		cout<<"Valor "<<i<<":\n";
+		cin>>valores[i];
+	}
+}
+void lps3(int digitos[16]) {
+	for (int i = 1; i <= 16; i++) {
+		cout<<"Valor " <<i <<": \n";
+		cin>>digitos[i];
+	}
+}
+
 int main()
+
 {
-   int matriz;
-   cout<<"****Bienvenidos al programa de multiplicacion de matrices****\n";
-   cout<<"Que matriz quisieras realizar?\n";
-   cout<<"1. 2x2\n2. 3x3\n3. 4x4\n\n";
-   cin >>matriz;
-   
-   switch (matriz) {
-   {
-   case 1:
-   
-   cout<<"********************Bienvenidos a matrcies 2x2********************"<<endl;
-   cout<<"Ingrese el valor de cada variable (sigue el ejemplo):\n";
-   cout<<"* [1 2] *\n";
-   cout<<"* [3 4] *\n";
-   
-   int numeros[4];
-   for (int i = 1; i < 5; i++) {
-       cout<<"Valor "<<i<<":\n";
-       cin>>numeros[i];
-   }
-   
-   int a1 = numeros[1], a2 = numeros[2], b1 = numeros[3], b2 = numeros[4];
-   cout<<"Primera matriz:\n";
-   cout<<"["<<a1<<" "<<a2<<"]\n";
-   cout<<"["<<b1<<" "<<b2<<"]\n\n";
-   cout<<"**************\n";
-   cout<<"Ingrese los valores de la segunda matriz:\n";
-   cout<<"* [1 2] *\n";
-   cout<<"* [3 4] *\n";
-   
-   for (int i = 1; i < 5; i++) {
-       cout<<"Valor "<<i<<":\n";
-       cin>>numeros[i];
-   }
-   
-   int A1 = numeros[1], A2 = numeros[2], B1 = numeros[3], B2 = numeros[4];
-   cout<<"**************\n";
-   cout<<"Primera matriz:\n";
-   cout<<"["<<a1<<" "<<a2<<"]\n";
-   cout<<"["<<b1<<" "<<b2<<"]\n";
-   cout<<"Segunda matriz:\n";
-   cout<<"["<<A1<<" "<<A2<<"]\n";
-   cout<<"["<<B1<<" "<<B2<<"]\n";
-   
-   cout<<"**************\n";
-   cout<<"Resultado:\n";
-   int aA1 = a1*A1, aB1 = a2*B1, aA2 = a1*A2, aB2 = a2*B2;
-   int bA1 = b1*A1, bB1 = b2*B1, bA2 = b1*A2, bB2 = b2*B2;
-   
-   cout<<"["<<aA1 + aB1<<" "<<aA2 + aB2<<"]\n";
-   cout<<"["<<bA1 + bB1<<" "<<bA2 + bB2<<"]\n";
-   
-   break;
-   
-   }
-   {
-   
-   
-   case 2:
-  
-  cout<<"********************Bienvenidos a matrcies 3x3********************"<<endl;
-  int res1, res2, res3, res4, res5, res6, res7, res8, res9;
-   cout<<"Favor de entrar valores de acuerdo al ejemplo:\n";
-   cout<<" [1 2 3] "<<endl;
-   cout<<" [4 5 6] "<<endl;
-   cout<<" [7 8 9] "<<endl;
-   
-   int valores1[9];
-   for (int i = 1; i < 9; i++) {
-       cout<<"Valor "<<i<<":\n";
-       cin>>valores1[i];
-       }
-       int c1 = valores1[1], c2 = valores1[2], c3 = valores1[3];
-       int d1 = valores1[4], d2 = valores1[5], d3 = valores1[6]; 
-       int e1 = valores1[7], e2 = valores1[8], e3 = valores1[9];
-       
-   cout<<"Primera matriz:\n";
-   cout<<"["<<c1<<" "<<c2<<" "<<c3<<"]\n";
-   cout<<"["<<d1<<" "<<d2<<" "<<d3<<"]\n";
-   cout<<"["<<e1<<" "<<e2<<" "<<e3<<"]\n";
-   cout<<"****************************************************\n";
-   cout<<"Favor de entrar valores de acuerdo al ejemplo:\n";
-   cout<<" [1 2 3] "<<endl;
-   cout<<" [4 5 6] "<<endl;
-   cout<<" [7 8 9] "<<endl;
-   
-   int valores2[9];
-   for (int i = 1; i < 9; i++) {
-       cout<<"Valor "<<i<<":\n";
-       cin>>valores2[i];
-       }
-       int C1 = valores2[1], C2 = valores2[2], C3 = valores2[3];
-       int D1 = valores2[4], D2 = valores2[5], D3 = valores2[6]; 
-       int E1 = valores2[7], E2 = valores2[8], E3 = valores2[9];
-       
-   cout<<"Segunda matriz:\n";
-   cout<<"["<<C1<<" "<<C2<<" "<<C3<<"]\n";
-   cout<<"["<<D1<<" "<<D2<<" "<<D3<<"]\n";
-   cout<<"["<<E1<<" "<<E2<<" "<<E3<<"]\n";
-   cout<<"****************************************************\n";
-   cout<<"El resultado de su matriz es: \n";
-   res1=(c1 * C1) + (c2 * D1) + (c3 * E1);
-   res2=(c1 * C2) + (c2 * D2) + (c3 * E2);
-   res3=(c1 * C3) + (c2 * D3) + (c3 * E3);
-   res4=(d1 * C1) + (d2 * D1) + (d3 * E1);
-   res5=(d1 * C2) + (d2 * D2) + (d3 * E2);
-   res6=(d1 * C3) + (d2 * D3) + (d3 * E3);
-   res7=(e1 * C1) + (e2 * D1) + (e3 * E1);
-   res8=(e1 * C2) + (e2 * D2) + (e3 * E2);
-   res9=(e1 * C3) + (e2 * D3) + (e3 * E3);
-   cout<<"["<<res1<<" "<<res2<<" "<<res3<<"]"<<endl;
-   cout<<"["<<res4<<" "<<res5<<" "<<res6<<"]"<<endl;
-   cout<<"["<<res6<<" "<<res7<<" "<<res8<<"]"<<endl;
-       break;
-   }
-    }
-   
-  
-   return 0;
+	int numeros[4], valores[9], digitos[16];
+	int matriz;
+	cout<<"*Bienvenidos al programa de multiplicacion de matrices*\n";
+	cout<<"Que matriz quisieras realizar?\n";
+	cout<<"1. 2x2\n2. 3x3\n3. 4x4\n\n";
+	cin >>matriz;
+
+	switch (matriz) {
+		{
+		case 1:
+
+			cout<<"*******Bienvenidos a matrices 2x2*******"<<endl;
+			cout<<"Ingrese el valor de cada variable (sigue el ejemplo):\n";
+			cout<<"* [1 2] *\n";
+			cout<<"* [3 4] *\n";
+			lps1(numeros);
+
+
+			int a1 = numeros[1], a2 = numeros[2], b1 = numeros[3], b2 = numeros[4];
+			cout<<"Primera matriz:\n";
+			cout<<"["<<a1<<" "<<a2<<"]\n";
+			cout<<"["<<b1<<" "<<b2<<"]\n\n";
+			cout<<"******\n";
+			cout<<"Ingrese los valores de la segunda matriz:\n";
+			cout<<"* [1 2] *\n";
+			cout<<"* [3 4] *\n";
+			lps1(numeros);
+
+			int A1 = numeros[1], A2 = numeros[2], B1 = numeros[3], B2 = numeros[4];
+			cout<<"******\n";
+			cout<<"Primera matriz:\n";
+			cout<<"["<<a1<<" "<<a2<<"]\n";
+			cout<<"["<<b1<<" "<<b2<<"]\n";
+			cout<<"Segunda matriz:\n";
+			cout<<"["<<A1<<" "<<A2<<"]\n";
+			cout<<"["<<B1<<" "<<B2<<"]\n";
+
+			cout<<"******\n";
+			cout<<"Resultado:\n";
+			int aA1 = a1*A1, aB1 = a2*B1, aA2 = a1*A2, aB2 = a2*B2;
+			int bA1 = b1*A1, bB1 = b2*B1, bA2 = b1*A2, bB2 = b2*B2;
+
+			cout<<"["<<aA1 + aB1<<" "<<aA2 + aB2<<"]\n";
+			cout<<"["<<bA1 + bB1<<" "<<bA2 + bB2<<"]\n";
+
+			break;
+
+		}
+
+
+	case 2: {
+
+		cout<<"*******Bienvenidos a matrices 3x3*******"<<endl;
+		int res1, res2, res3, res4, res5, res6, res7, res8, res9;
+		cout<<"Favor de entrar valores de acuerdo al ejemplo:\n";
+		cout<<" [1 2 3] "<<endl;
+		cout<<" [4 5 6] "<<endl;
+		cout<<" [7 8 9] "<<endl;
+		lps2(valores);
+
+		int c1 = valores[1], c2 = valores[2], c3 = valores[3];
+		int d1 = valores[4], d2 = valores[5], d3 = valores[6];
+		int e1 = valores[7], e2 = valores[8], e3 = valores[9];
+		cout<<"Primera matriz:\n";
+		cout<<"["<<c1<<" "<<c2<<" "<<c3<<"]\n";
+		cout<<"["<<d1<<" "<<d2<<" "<<d3<<"]\n";
+		cout<<"["<<e1<<" "<<e2<<" "<<e3<<"]\n";
+		cout<<"******************\n";
+		cout<<"Favor de entrar valores de acuerdo al ejemplo:\n";
+		cout<<" [1 2 3] "<<endl;
+		cout<<" [4 5 6] "<<endl;
+		cout<<" [7 8 9] "<<endl;
+		lps2(valores);
+
+		int C1 = valores[1], C2 = valores[2], C3 = valores[3];
+		int D1 = valores[4], D2 = valores[5], D3 = valores[6];
+		int E1 = valores[7], E2 = valores[8], E3 = valores[9];
+		cout<<"Segunda matriz:\n";
+		cout<<"["<<C1<<" "<<C2<<" "<<C3<<"]\n";
+		cout<<"["<<D1<<" "<<D2<<" "<<D3<<"]\n";
+		cout<<"["<<E1<<" "<<E2<<" "<<E3<<"]\n";
+		cout<<"******************\n";
+		cout<<"El resultado de su matriz es: \n";
+		res1=(c1 * C1) + (c2 * D1) + (c3 * E1);
+		res2=(c1 * C2) + (c2 * D2) + (c3 * E2);
+		res3=(c1 * C3) + (c2 * D3) + (c3 * E3);
+		res4=(d1 * C1) + (d2 * D1) + (d3 * E1);
+		res5=(d1 * C2) + (d2 * D2) + (d3 * E2);
+		res6=(d1 * C3) + (d2 * D3) + (d3 * E3);
+		res7=(e1 * C1) + (e2 * D1) + (e3 * E1);
+		res8=(e1 * C2) + (e2 * D2) + (e3 * E2);
+		res9=(e1 * C3) + (e2 * D3) + (e3 * E3);
+		cout<<"["<<res1<<" "<<res2<<" "<<res3<<"]"<<endl;
+		cout<<"["<<res4<<" "<<res5<<" "<<res6<<"]"<<endl;
+		cout<<"["<<res7<<" "<<res8<<" "<<res9<<"]"<<endl;
+		break;
+
+	}
+	
+	// Owen Ramirez
+	case 3: {
+		cout<<"********Bienvenidos a matrices 4x4********"<<endl;
+		int ans1, ans2, ans3, ans4, ans5, ans6, ans7, ans8, ans9, ans10, ans11, ans12, ans13, ans14, ans15, ans16;
+		cout<<"Entra los valores como se muestra en el ejemplo \n" <<endl;
+		cout<<" [1  2  3  4] \n [5  6  7  8] \n [9 10 11 12] \n [13 14 15 16]" <<endl;
+		lps3(digitos);
+
+		int f1 = digitos[1], f2 = digitos[2], f3 = digitos[3], f4 = digitos[4];
+		int g1 = digitos[5], g2 = digitos[6], g3 = digitos[7], g4 = digitos[8];
+		int h1 = digitos[9], h2 = digitos[10], h3 = digitos[11], h4 = digitos [12];
+		int j1 = digitos[13], j2 = digitos[14], j3 = digitos[15], j4 = digitos[16];
+		cout<<"Primera matriz: \n";
+		cout<<"["<<f1<<" "<<f2<<" "<<f3<<"]\n";
+		cout<<"["<<g1<<" "<<g2<<" "<<g3<<"]\n";
+		cout<<"["<<j1<<" "<<j2<<" "<<j3<<"]\n";
+		cout<<"***************************\n";
+		
+		cout<<"Entre los valores dejándose llevar por el ejemplo:  \n";
+			cout<<" [1  2  3  4] \n [5  6  7  8] \n [9 10 11 12] \n [13 14 15 16]" <<endl;
+		lps3(digitos);
+		
+		int F1 = digitos[1], F2 = digitos[2], F3 = digitos[3], F4 = digitos[4];
+		int G1 = digitos[5], G2 = digitos[6], G3 = digitos[7], G4 = digitos[8];
+		int H1 = digitos[9], H2 = digitos[10], H3 = digitos[11], H4 = digitos[12];
+		int J1 = digitos[13], J2 = digitos[14], J3 = digitos[15], J4 = digitos[16];
+		cout<<"Segunda matriz: \n";
+		
+		
+	}
+	}
+	return 0;
 }
