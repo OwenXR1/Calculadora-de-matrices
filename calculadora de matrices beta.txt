@@ -93,15 +93,26 @@ int main()
    cout<<"["<<A1<<" "<<A2<<"]\n";
    cout<<"["<<B1<<" "<<B2<<"]\n";
    cout<<"*******************************************************\n";
-   cout<<"Resultado:\n";
+   
+   if (operacion == 1) {
+   cout<<"El resultado de su matriz es: \n";
+   cout<<"["<<a1+A1<<" "<<a2+A2<<"]\n";
+   cout<<"["<<b1+B1<<" "<<b2+B2<<"]\n";
+   } else if (operacion == 2) {
+   cout<<"El resultado de su matriz es: \n";
+   cout<<"["<<a1-A1<<" "<<a2-A2<<"]\n";
+   cout<<"["<<b1-B1<<" "<<b2-B2<<"]\n";
+   } else if (operacion == 3) {
+   cout<<"El resultado de su matriz es: \n";
    int aA1 = a1*A1, aB1 = a2*B1, aA2 = a1*A2, aB2 = a2*B2;
    int bA1 = b1*A1, bB1 = b2*B1, bA2 = b1*A2, bB2 = b2*B2;
-   
    cout<<"["<<aA1 + aB1<<" "<<aA2 + aB2<<"]\n";
    cout<<"["<<bA1 + bB1<<" "<<bA2 + bB2<<"]\n";
+   } else {
+       cout<<"Input invalido, favor de volver al menu.\n";
+   }
    cout<<"*******************************************************\n";
-   
-   break;
+      break;
    
    }
    
