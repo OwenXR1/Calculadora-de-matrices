@@ -35,7 +35,7 @@ int main()
    char desicion = 'n';
    
    cout<<"*******************************************************\n";
-   cout<<"*Bienvenidos al programa de multiplicacion de matrices*\n";
+   cout<<"**********Bienvenidos al programa de matrices**********\n";
    cout<<"Que matriz quisieras realizar?\n";
    cout<<"1. 2x2\n2. 3x3\n3. 4x4\n4. Salir\n";
    cout<<"*******************************************************\n";
@@ -43,7 +43,10 @@ int main()
     if ( matriz == 4) {
        cout<<"Gracias por usar nuestro software de matrices!!\n";
        return 0;
-   } 
+   } else if (matriz > 4) {
+       cout<<"Input invalido.\n";
+       return 0;
+   }
    cout<<"*******************************************************\n";
    cout<<"Que operacion deseas hacer con la matriz?\n";
    cout<<"1. Suma\n2. Resta\n3. Multiplicacion\n4. Salir\n";
@@ -54,7 +57,11 @@ int main()
    if ( operacion == 4) {
        cout<<"Gracias por usar nuestro software de matrices!!\n";
        return 0;
-   } 
+   } else if (operacion > 4) {
+       cout<<"Input invalido, favor de volver al menu.\n";
+       return 0;
+   }
+   
    switch (matriz) {
    {
    case 1:
