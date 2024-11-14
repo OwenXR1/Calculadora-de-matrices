@@ -30,21 +30,31 @@ void lps3(int digitos[16]) {
 int main()
 
 {
-	int numeros[4], valores[9], digitos[16];
-	int matriz, operacion;
+   int numeros[4], valores[9], digitos[16];
+   int matriz, operacion;
+   char desicion = 'n';
+   
    cout<<"*******************************************************\n";
    cout<<"*Bienvenidos al programa de multiplicacion de matrices*\n";
    cout<<"Que matriz quisieras realizar?\n";
-   cout<<"1. 2x2\n2. 3x3\n3. 4x4\n";
+   cout<<"1. 2x2\n2. 3x3\n3. 4x4\n4. Salir\n";
    cout<<"*******************************************************\n";
    cin>>matriz;
+    if ( matriz == 4) {
+       cout<<"Gracias por usar nuestro software de matrices!!\n";
+       return 0;
+   } 
    cout<<"*******************************************************\n";
-   cout<<"Que operacion deseas realizar con la matriz?\n";
-   cout<<"1. Suma\n2. Resta\n3. Multiplicacion\n";
+   cout<<"Que operacion deseas hacer con la matriz?\n";
+   cout<<"1. Suma\n2. Resta\n3. Multiplicacion\n4. Salir\n";
    cout<<"*******************************************************\n";
    cin>>operacion;
    cout<<"*******************************************************\n";
    cout<<"\n";
+   if ( operacion == 4) {
+       cout<<"Gracias por usar nuestro software de matrices!!\n";
+       return 0;
+   } 
    switch (matriz) {
    {
    case 1:
@@ -160,10 +170,11 @@ int main()
 	case 3: {
 		cout<<"********Bienvenidos a matrices 4x4********"<<endl;
 		int ans1, ans2, ans3, ans4, ans5, ans6, ans7, ans8, ans9, ans10, ans11, ans12, ans13, ans14, ans15, ans16;
+		cout<<"*******************************************************\n";
 		cout<<"Entra los valores como se muestra en el ejemplo \n" <<endl;
 		cout<<" [1  2  3  4] \n [5  6  7  8] \n [9 10 11 12] \n [13 14 15 16]" <<endl;
 		lps3(digitos);
-
+        cout<<"*******************************************************\n";
 		int f1 = digitos[1], f2 = digitos[2], f3 = digitos[3], f4 = digitos[4];
 		int g1 = digitos[5], g2 = digitos[6], g3 = digitos[7], g4 = digitos[8];
 		int h1 = digitos[9], h2 = digitos[10], h3 = digitos[11], h4 = digitos [12];
@@ -172,20 +183,29 @@ int main()
 		cout<<"["<<f1<<" "<<f2<<" "<<f3<<"]\n";
 		cout<<"["<<g1<<" "<<g2<<" "<<g3<<"]\n";
 		cout<<"["<<j1<<" "<<j2<<" "<<j3<<"]\n";
-		cout<<"***************************\n";
+		cout<<"*******************************************************\n";
 		
 		cout<<"Entre los valores dejándose llevar por el ejemplo:  \n";
 			cout<<" [1  2  3  4] \n [5  6  7  8] \n [9 10 11 12] \n [13 14 15 16]" <<endl;
 		lps3(digitos);
-		
+		cout<<"*******************************************************\n";
 		int F1 = digitos[1], F2 = digitos[2], F3 = digitos[3], F4 = digitos[4];
 		int G1 = digitos[5], G2 = digitos[6], G3 = digitos[7], G4 = digitos[8];
 		int H1 = digitos[9], H2 = digitos[10], H3 = digitos[11], H4 = digitos[12];
 		int J1 = digitos[13], J2 = digitos[14], J3 = digitos[15], J4 = digitos[16];
 		cout<<"Segunda matriz: \n";
+		}
 		
-		
-	}
+		cout<<"Deseas reiniciar? (S//N): ";
+       cin>>desicion;
+       desicion = toupper(desicion);
+       if (desicion == 'N') {
+           cout<<"Adios!! \n";
+       } else if (desicion == 'S') {
+           main();
+       } else {
+           cout<<"Input invalido, favor de escoger 'S' o 'N'.";
+       }
 	}
 	return 0;
 }
