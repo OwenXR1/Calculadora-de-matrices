@@ -5,6 +5,9 @@ Calculadora de matrices
  Yaziel Andrades
 */
 
+
+//-lps = abreviación de "loops"
+
 #include <iostream>
 #include <cctype>
 using namespace std;
