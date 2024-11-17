@@ -21,7 +21,7 @@ Versionar 1.2:
 
 Version 2.0:
 
--Se implementa los metodos de suma y resta de matrices para crear variedad de funcionalidades en el programa.
+- Se implementa los metodos de suma y resta de matrices para crear variedad de funcionalidades en el programa.
   
 
 License:
