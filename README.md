@@ -1,9 +1,11 @@
 # Calculadora-de-matrices
 Este programa es una calculadora de matrices que ofrece varias operaciones matemáticas para resolver matrices 2x2, 3x3 y 4x4. En esta calculadora puedes realizar suma, resta y multiplicación para cada una de estas matrices. Hemos creado un menú intuitivo que sea fácil de entender para el usuario que desea utilizar nuestro programa. 
 
-How to use:
+HOW TO USE:
 Cuando inicies el programa escoje la matrices que estaras ultilizando, oprime el numero de la matriz que desees realizar en el programa, luego escoje la operación matematica que vas a realizar, cuando entres a la matriz deseada, provee los valores de acuerdo al ejemplo en el programa y el resultado sera impreso en pantalla.
 Version History: 
+
+VERSION HISTORY:
 
 Version 1.0:
 
@@ -14,7 +16,7 @@ Version 1.1:
 
 - Se implementaron funciones para evitar el dry en el programa, reducir lineas de codigo y sobre todo limpiarlo.
   
-Versionar 1.2:
+Version 1.2:
 
 - Se creo una manera en la cual el usuario se puede salir del programa cuando esta en el menu.
 - Con el metodo de salida, se incluyo un metodo en la cual el usario decide reiniciar el programa y/o acabarlo.
