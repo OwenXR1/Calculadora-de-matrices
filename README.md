@@ -2,11 +2,12 @@
 Este programa es una calculadora de matrices que ofrece varias operaciones matemáticas para resolver matrices 2x2, 3x3 y 4x4. En esta calculadora puedes realizar suma, resta y multiplicación para cada una de estas matrices. Hemos creado un menú intuitivo que sea fácil de entender para el usuario que desea utilizar nuestro programa. 
 
 How to use:
-Este programa fue echo para ser facil de entender y usar. Cu7ando inicies el programa escoje la matrices que estaras ultilizando, escribe el numero que apareze al lado de la matriz, luego escoje cual ejercicio matematico vas hacer, escribe el numero de al lado, luego ingrese los valores y las matrices y le aparesera el resultado. 
+Este programa fue echo para ser fácil de entender y usar. Cuando inicies el programa escoge la matrices que estarás utilizando, escribe el numero que aparece al lado de la matriz, luego escoge cual ejercicio matemático desea realizar, escribe el número de al lado, luego ingrese los valores y las matrices y le aparecerá el resultado. 
+
 Version History:  
 
 License:
-esta calse esta licenciada bajo la licencia de IAPR:
+esta clase esta licenciada bajo la licencia de IAPR:
 
 Copyright © 2024
 
