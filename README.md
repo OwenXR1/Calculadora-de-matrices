@@ -24,7 +24,7 @@ Version 2.0:
 - Se implementa los metodos de suma y resta de matrices para crear variedad de funcionalidades en el programa.
   
 
-License:
+LICENSE:
 esta clase esta licenciada bajo la licencia de IAPR:
 
 Copyright © 2024 @OwenXR1 @413J4N9R0 @ZxroMxrcy
