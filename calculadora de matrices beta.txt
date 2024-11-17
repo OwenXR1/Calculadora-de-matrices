@@ -67,7 +67,7 @@ int main()
 		cout<<"Input invalido, favor de volver al menu.\n";
 		return 0;
 	}
-
+// Yaziel Andrades
 	switch (matriz) {
 		{
 		case 1:
