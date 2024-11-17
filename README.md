@@ -27,7 +27,7 @@ Version 2.0:
 License:
 esta clase esta licenciada bajo la licencia de IAPR:
 
-Copyright © 2024 @OwenXR1 @
+Copyright © 2024 @OwenXR1 @413J4N9R0
 
 Se concede permiso, sin costo, a cualquier persona que obtenga una copia de este programa y los archivos asociados para operar sin restricciones, incluidos, los derechos de uso, copia, modificación, fusión , publicar, distribuir, sublicenciar y/o vender copias del Software, y permitir que las personas a quienes se les proporciona el programa lo hagan, sujeto a las siguientes condiciones:
 
