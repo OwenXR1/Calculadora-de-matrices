@@ -12,6 +12,7 @@ Calculadora de matrices
 #include <cctype>
 using namespace std;
 
+//Alejandro Ramirez, Yaziel Andrades, Owen Ramirez
 
 void lps1(int numeros[4]) {
 	for (int i = 1; i <= 4; i++) {
@@ -33,6 +34,8 @@ void lps3(int digitos[16]) {
 }
 
 int main()
+
+//Alejandro Ramirez, Yaziel Andrades
 
 {
 	int numeros[4], valores[9], digitos[16];
@@ -71,6 +74,9 @@ int main()
 
 	switch (matriz) {
 		{
+
+	//Yaziel Andrades
+
 		case 1:
 
 			cout<<"***************Bienvenidos a matrices 2x2***************\n";
@@ -122,6 +128,7 @@ int main()
 
 		}
 
+	//Alejandro Ramirez
 
 	case 2: {
 
@@ -192,7 +199,8 @@ int main()
 
 	}
 
-	
+	//Owen Ramirez
+
 	case 3: {
 		cout<<"********Bienvenidos a matrices 4x4********"<<endl;
 		int ans1, ans2, ans3, ans4, ans5, ans6, ans7, ans8, ans9, ans10, ans11, ans12, ans13, ans14, ans15, ans16;
