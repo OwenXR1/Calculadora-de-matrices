@@ -40,7 +40,7 @@ int main()
 {
 	int numeros[4], valores[9], digitos[16];
 	int matriz, operacion;
-	char desicion = 'n';
+	char desicion;
 
 	cout<<"*******************************************************\n";
 	cout<<"**********Bienvenidos al programa de matrices**********\n";
